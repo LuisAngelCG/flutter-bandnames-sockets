@@ -53,7 +53,7 @@ class _HomePageState extends State<HomePage> {
         color: Colors.red,
         child: Align(
             alignment: Alignment.centerLeft,
-            child: Text('Delete Band', style: TextStyle(color: Colors.white))),
+            child: Icon(Icons.delete, color: Colors.white)),
       ),
       child: ListTile(
         leading: CircleAvatar(
@@ -74,7 +74,7 @@ class _HomePageState extends State<HomePage> {
 
   addNewBand() {
     final textController = new TextEditingController();
-    if (Platform.isIOS) {
+    if (Platform.isAndroid) {
       return showDialog(
         //para android
         context: context,
