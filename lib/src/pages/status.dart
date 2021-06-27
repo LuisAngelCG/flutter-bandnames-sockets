@@ -15,9 +15,9 @@ class StatusPage extends StatelessWidget {
         child: Icon(Icons.message),
         onPressed: () {
           //emitir :
+          print('me estan presionando xd');
           //{nombre: 'Flutter', mensaje: 'Hola desde flutter'}
-          socketService.socket.emit('nuevo-mensaje',
-              {'nombre': 'FLutter', 'mensaje': 'Hola desde flutter'});
+          socketService.socket.emit('emitir-mensaje',{'nombre': 'FLutter', 'mensaje': 'Hola desde flutter'});
         },
       ),
     );
